@@ -110,7 +110,7 @@ userRouter.get('/', isAuth, getAllUsers);
 
 userRouter.get('/:id', isAuth, getUserById);
 
-userRouter.put('/', isAuth, upload.single('image'), updateUserById);  // note: update without :id in URL, because you use req.userId
+userRouter.put('/', isAuth, upload.single('image'), updateUserById); 
 
 userRouter.delete('/:id', isAuth, deleteUserById);
 
